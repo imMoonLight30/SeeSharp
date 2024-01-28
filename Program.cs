@@ -15,6 +15,8 @@ namespace SeeSharp
             Console.WriteLine(list.ToString());
             list.Remove("three");
             Console.WriteLine(list.ToString());
+            list.Name = "MyLinkedList";
+            Console.WriteLine("Name and Count "+list.Name+" and "+list.Count);
         }
     }
 }

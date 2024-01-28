@@ -4,6 +4,18 @@ namespace SeeSharp{
     internal class LinkedList{
         ListNode head;
         ListNode tail;
+        public string Name{set; get;}
+        public int Count{
+            get{
+                int _count = 0;
+                ListNode temp = head;
+                while(temp != null){
+                    _count++;
+                    temp = temp.next;
+                }
+                return _count;
+            }
+        }
 
         public void Add(object value){
             if(head == null){
