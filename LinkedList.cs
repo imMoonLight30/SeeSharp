@@ -34,6 +34,19 @@ namespace SeeSharp{
             }
         }
 
+        public object First(){
+            if(head == null){
+                throw new Exception("List is empty");
+            }
+            return head.val;
+        }
+        public object Last(){
+            if(tail == null){
+                throw new Exception("List is empty");
+            }
+            return tail.val;
+        }
+
         public override string ToString(){
             StringBuilder builder = new StringBuilder();
             if(head == null){

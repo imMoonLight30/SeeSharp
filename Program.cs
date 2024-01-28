@@ -15,6 +15,7 @@ namespace SeeSharp
             Console.WriteLine(list.ToString());
             list.Remove("three");
             Console.WriteLine(list.ToString());
+            Console.WriteLine("First and Last in list "+list.First()+" ,and "+list.Last());
         }
     }
 }
