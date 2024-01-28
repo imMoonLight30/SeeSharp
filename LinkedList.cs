@@ -4,6 +4,7 @@ namespace SeeSharp{
     internal class LinkedList{
         ListNode head;
         ListNode tail;
+        private int Capacity = 100;
         public string Name{set; get;}
         public int Count{
             get{
@@ -18,6 +19,9 @@ namespace SeeSharp{
         }
 
         public void Add(object value){
+            if(Count == Capacity){
+                throw new Exception("List Capacity Reached Maximum");
+            }
             if(head == null){
                 ListNode node = new ListNode(value);
                 head = node;
