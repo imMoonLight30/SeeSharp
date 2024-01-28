@@ -17,6 +17,8 @@ namespace SeeSharp
             Console.WriteLine(list.ToString());
             list.Name = "MyLinkedList";
             Console.WriteLine("Name and Count "+list.Name+" and "+list.Count);
+            Console.WriteLine("First and Last in list "+list.First()+" ,and "+list.Last());
+
         }
     }
 }
