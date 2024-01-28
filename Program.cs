@@ -12,6 +12,7 @@ namespace SeeSharp
             list.Add("two");
             list.Add("three");
             list.Add("four");
+            list.Add("five");
             Console.WriteLine(list.ToString());
             list.Remove("three");
             Console.WriteLine(list.ToString());
