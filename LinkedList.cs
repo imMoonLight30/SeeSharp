@@ -51,20 +51,8 @@ namespace SeeSharp{
         }
 
         public void Remove(int value_int){
-            if(head == null){
-                throw new Exception("Empty Linked List");
-            }else{
-                string value = "two";
-                ListNode temp = head;
-                while(temp != null && temp.val != value){
-                    temp =temp.next;
-                }
-                if(temp == null ){
-                    throw new Exception(value+" is not present");
-                }
-                ListNode previous = temp.prev;
-                previous.next = temp.next;
-            }
+            object item = this[value_int];
+            Remove(item);
         }
 
         public object First(){
