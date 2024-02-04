@@ -24,6 +24,9 @@ namespace SeeSharp
             list[3]="nine";
             Console.WriteLine("3rd element "+list[2].ToString());
             Console.WriteLine("list -\n"+list.ToString());
+            //overloading of the function
+            list.Remove(2);
+            Console.WriteLine(list.ToString());
 
         }
     }
