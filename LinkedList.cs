@@ -75,5 +75,27 @@ namespace SeeSharp{
             }
             return builder.ToString();
         }
+
+        public virtual object this[int i]{
+            get{
+            ListNode temp = head;
+            for(int x = 0 ; temp != null && x<i ; x++){
+                temp = temp.next;
+            }
+            if(temp==null)
+                throw new Exception("Wrong index: ");
+            return temp.val;
+            }
+            set{
+                this.Add(value);
+                /*
+                ListNode temp = tail;
+                ListNode node = new ListNode(value);
+                temp.next = node;
+                node.prev = temp;
+                tail = tail.next;
+                */
+            }
+        }
     }
 }

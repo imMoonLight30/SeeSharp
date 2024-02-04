@@ -20,6 +20,11 @@ namespace SeeSharp
             Console.WriteLine("Name and Count "+list.Name+" and "+list.Count);
             Console.WriteLine("First and Last in list "+list.First()+" ,and "+list.Last());
 
+            //Indexer(treat collection class as array)
+            list[3]="nine";
+            Console.WriteLine("3rd element "+list[2].ToString());
+            Console.WriteLine("list -\n"+list.ToString());
+
         }
     }
 }
