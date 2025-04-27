@@ -6,6 +6,7 @@ namespace SeeSharp
     {
         static void Main(string[] args)
         {
+            /* old practide
             Console.WriteLine("Linked List with input 1,2,3,4,5");
             LinkedList list = new();
             list.Add("one");
@@ -27,6 +28,9 @@ namespace SeeSharp
             //overloading of the function
             list.Remove(2);
             Console.WriteLine(list.ToString());
+            */
+            var name = Console.ReadLine();
+            Console.WriteLine("Hello World!"+name);
 
         }
     }
